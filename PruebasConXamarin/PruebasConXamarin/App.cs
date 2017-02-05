@@ -31,6 +31,7 @@ namespace PruebasConXamarin
             //MainPage = new XamlClock();
             //MainPage = new ColorViewListPage();
             MainPage = new MonkeyTapPage();
+
         }
 
         public string DisplayLabelText { set; get; }
