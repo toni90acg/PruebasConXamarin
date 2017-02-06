@@ -36,6 +36,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
+    <Compile Include="Chapter11.TheBindableInfrastructure\AlternativeLabel\AlternativeLabel.cs" />
+    <Compile Include="Chapter11.TheBindableInfrastructure\AlternativeLabel\PointSizedTextPage.xaml.cs">
+      <DependentUpon>PointSizedTextPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter11.TheBindableInfrastructure\DynamicVsStaticCodePage.cs" />
+    <Compile Include="Chapter11.TheBindableInfrastructure\PropertySettingsPage.cs" />
     <Compile Include="Views\Buttons\ButtonLambdasPage.cs" />
     <Compile Include="Views\Buttons\ButtonLoggerPage.cs" />
     <Compile Include="Views\Buttons\PersistentKeypadPage.cs" />
@@ -119,6 +125,16 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\XAML\TapGestures\MonkeyTapPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Chapter10.XamlMarkUpExtensions\" />
+    <Folder Include="Chapter9.PlatformSpecificApiCalls\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chapter11.TheBindableInfrastructure\AlternativeLabel\PointSizedTextPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

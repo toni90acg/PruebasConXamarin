@@ -1,4 +1,6 @@
-﻿using PruebasConXamarin.Views.Buttons;
+﻿using PruebasConXamarin.Chapter11.TheBindableInfrastructure;
+using PruebasConXamarin.Chapter11.TheBindableInfrastructure.AlternativeLabel;
+using PruebasConXamarin.Views.Buttons;
 using PruebasConXamarin.Views.XAML;
 using PruebasConXamarin.Views.XAML.TapGestures;
 using Xamarin.Forms;
@@ -10,7 +12,7 @@ namespace PruebasConXamarin
         const string displayLabelText = "displayLabelText";
 
         public App()
-        {//Pagina 182 (203 de 1187)
+        {//Pagina 246 (267 de 1187)
 
             if (Properties.ContainsKey(displayLabelText))
             {
@@ -30,7 +32,10 @@ namespace PruebasConXamarin
             //MainPage = new ScaryColorListPage();
             //MainPage = new XamlClock();
             //MainPage = new ColorViewListPage();
-            MainPage = new MonkeyTapPage();
+            //MainPage = new MonkeyTapPage();
+            //MainPage = new PropertySettingsPage();
+            //MainPage = new DynamicVsStaticCodePage();
+            MainPage = new PointSizedTextPage();
 
         }
 
